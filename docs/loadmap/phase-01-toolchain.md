@@ -60,10 +60,10 @@ GOOS=linux GOARCH=amd64 go build -o myapp .
 
 ## 完了チェックリスト
 
-- [ ] `go version` で 1.22 以上（または最新安定版）が表示される
-- [ ] `go run` / `go build` / `go mod init` を説明できる
-- [ ] なぜ `gofmt` を使うのか、他言語の formatter との違いを一言で言える
-- [ ] クロスコンパイルの概念を理解した
+- [x] `go version` で 1.22 以上（または最新安定版）が表示される
+- [x] `go run` / `go build` / `go mod init` を説明できる
+- [x] なぜ `gofmt` を使うのか、他言語の formatter との違いを一言で言える
+- [x] クロスコンパイルの概念を理解した
 
 ## 参照
 
