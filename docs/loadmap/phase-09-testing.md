@@ -88,13 +88,14 @@ go test -bench=. -benchmem
 
 - 最適化前のベースライン計測 —  premature optimization を避ける
 
-### 9.7 go vet と staticcheck
+### 9.7 go vet と static analysis
 
 ```bash
 go vet ./...
 ```
 
 - 疑わしい construct を検出 — `go test` とセットで実行
+- より広い静的解析は [staticcheck](https://staticcheck.dev/docs/) や [golangci-lint](https://golangci-lint.run/) を CI に組み込む（必要になってから）
 
 ## 演習
 
@@ -113,7 +114,10 @@ go vet ./...
 
 ## 参照
 
-- [Testing flags](https://pkg.go.dev/testing)
-- [Effective Go — Testing](https://go.dev/doc/effective_go#testing)
-- [Go blog — Subtests](https://go.dev/blog/subtests)
-- [Go Wiki — TestComments](https://go.dev/wiki/TestComments)
+- [pkg.go-tour-jp.appspot.com — testing](https://pkg.go-tour-jp.appspot.com/testing)
+- [Effective Go — Testing](https://go-tour-jp.appspot.com/doc/effective_go#testing)
+- [Go blog — Subtests](https://go-tour-jp.appspot.com/blog/subtests)
+- [Tutorial: Add a test](https://go-tour-jp.appspot.com/doc/tutorial/add-a-test) — 公式のテスト追加手順
+- [Tutorial: Getting started with fuzzing](https://go-tour-jp.appspot.com/doc/tutorial/fuzz) — Go 1.18+ の fuzz テスト
+- [Go Wiki — TestComments](https://go-tour-jp.appspot.com/wiki/TestComments)
+- [Go Wiki — CodeReviewComments — Tests](https://go-tour-jp.appspot.com/wiki/CodeReviewComments#tests)

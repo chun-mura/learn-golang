@@ -67,10 +67,10 @@ case int:
 
 ## 演習
 
-1. **[A Tour of Go — Interfaces 節](https://go.dev/tour/methods/9)** 〜 [Tour end](https://go.dev/tour/methods/13) を完了
+1. **[A Tour of Go — Interfaces 節](https://go-tour-jp.appspot.com/tour/methods/9)** 〜 [Tour end](https://go-tour-jp.appspot.com/tour/methods/13) を完了
 2. `io.Reader` を引数に取る `Dump(r io.Reader)` 関数を書き、`*os.File`, `strings.Reader`, 自作 buffer type で動かす
 3. テスト用に **小さな interface** を自分で定義し、本番実装と fake 実装を差し替える
-4. [Effective Go — Interfaces](https://go.dev/doc/effective_go#interfaces) を読み、重要な段落にメモ
+4. [Effective Go — Interfaces](https://go-tour-jp.appspot.com/doc/effective_go#interfaces) を読み、重要な段落にメモ
 
 ## 完了チェックリスト
 
@@ -81,6 +81,7 @@ case int:
 
 ## 参照
 
-- [A Tour of Go — Methods and Interfaces](https://go.dev/tour/methods/1)
-- [Effective Go — Interfaces](https://go.dev/doc/effective_go#interfaces)
-- [Go Wiki — CodeReviewComments — Interface names](https://go.dev/wiki/CodeReviewComments#interface-names)
+- [A Tour of Go — Methods and Interfaces](https://go-tour-jp.appspot.com/tour/methods/1)
+- [Effective Go — Interfaces](https://go-tour-jp.appspot.com/doc/effective_go#interfaces)
+- [FAQ — Goはオブジェクト指向言語ですか？](https://go.dokyumento.jp/doc/faq) — 暗黙実装の背景
+- [Go Wiki — CodeReviewComments — Interface names](https://go-tour-jp.appspot.com/wiki/CodeReviewComments#interface-names)

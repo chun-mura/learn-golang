@@ -16,7 +16,7 @@
 
 - goroutine 間でデータを共有する際、**どこまで言語が保証するか**を知る
 - channel 操作、`sync` プリミティブ、`Once` 等が happens-before を確立
-- **参照:** [The Go Memory Model](https://go.dev/ref/mem)
+- **参照:** [The Go Memory Model](https://go-tour-jp.appspot.com/ref/mem)
 
 ```go
 // 悪い例: 共有変数への unsynchronized アクセス
@@ -30,6 +30,7 @@ if flag { ... } // data race の可能性
 - マーク＆スイープ GC — 停止時間（STW）は世代ごとに改善されている
 - 開発者が `free` しない — **割り当てを減らす**設計が有効
 - `GOGC` 環境変数で GC チューニング（本番前のプロファイリングとセット）
+- **参照:** [Go GC Guide](https://go-tour-jp.appspot.com/doc/gc-guide)
 
 ### 7.3 エスケープ解析
 
@@ -61,7 +62,7 @@ go build -gcflags='-m' ./...
 
 ## 演習
 
-1. [Go Memory Model](https://go.dev/ref/mem) を読み、channel による happens-before の例を自分の言葉で要約
+1. [Go Memory Model](https://go-tour-jp.appspot.com/ref/mem) を読み、channel による happens-before の例を自分の言葉で要約
 2. 小さな struct を値/ポインタ両方で渡し、`-gcflags='-m'` で escape の有無を確認
 3. `sync.Mutex` でカウンタを保護するコードと、channel で集約するコードを書き、トレードオフを比較
 4. `go test -race` で意図的な data race を検出（Phase 09 と連動可）
@@ -75,7 +76,9 @@ go build -gcflags='-m' ./...
 
 ## 参照
 
-- [The Go Memory Model](https://go.dev/ref/mem)
-- [Go blog — Go 1.5 GC](https://go.dev/blog/go15gc)（背景理解）
-- [Go Wiki — Performance](https://go.dev/wiki/Performance)
-- [pkg.go.dev — runtime](https://pkg.go.dev/runtime)
+- [The Go Memory Model](https://go-tour-jp.appspot.com/ref/mem)
+- [Go GC Guide](https://go-tour-jp.appspot.com/doc/gc-guide)
+- [Go blog — Profiling Go Programs](https://go-tour-jp.appspot.com/blog/pprof) — `pprof` による計測
+- [Go Wiki — Performance](https://go-tour-jp.appspot.com/wiki/Performance)
+- [pkg.go-tour-jp.appspot.com — runtime](https://pkg.go-tour-jp.appspot.com/runtime)
+- [pkg.go-tour-jp.appspot.com — sync](https://pkg.go-tour-jp.appspot.com/sync)

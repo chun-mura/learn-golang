@@ -67,7 +67,7 @@ func NewUser(name string) (*User, error) {
 
 ## 演習
 
-1. **[A Tour of Go — 第 2 章前半（Methods）](https://go.dev/tour/methods/1)** を完了
+1. **[A Tour of Go — 第 2 章前半（Methods）](https://go-tour-jp.appspot.com/tour/methods/1)** を完了
 2. ドメインモデルを設計:
    - `Account` struct
    - `PremiumAccount` — embedding で `Account` を拡張（継承ではなく合成）
@@ -84,7 +84,8 @@ func NewUser(name string) (*User, error) {
 
 ## 参照
 
-- [A Tour of Go — Methods](https://go.dev/tour/methods/1)
-- [Effective Go — Structs](https://go.dev/doc/effective_go#structs)
-- [Effective Go — Embedding](https://go.dev/doc/effective_go#embedding)
+- [A Tour of Go — Methods](https://go-tour-jp.appspot.com/tour/methods/1)
+- [Effective Go — Structs](https://go-tour-jp.appspot.com/doc/effective_go#structs)
+- [Effective Go — Embedding](https://go-tour-jp.appspot.com/doc/effective_go#embedding)
+- [FAQ — 型継承がないのはなぜですか？](https://go.dokyumento.jp/doc/faq) — コンポジションの背景
 - [Go by Example — Structs, Methods, Embedding](https://gobyexample.com/structs)

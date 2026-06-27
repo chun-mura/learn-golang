@@ -81,7 +81,10 @@ Web/API 経験者向け: 他言語の middleware エラーハンドラと Go の
 
 ## 参照
 
-- [Effective Go — Errors](https://go.dev/doc/effective_go#errors)
-- [Go blog — Working with Errors in Go 1.13](https://go.dev/blog/go1.13-errors)
-- [pkg.go.dev — errors](https://pkg.go.dev/errors)
+- [Effective Go — Errors](https://go-tour-jp.appspot.com/doc/effective_go#errors)
+- [Go blog — Working with Errors in Go 1.13](https://go-tour-jp.appspot.com/blog/go1.13-errors) — `%w` / `errors.Is` / `errors.As`
+- [Go blog — Error handling and Go](https://go-tour-jp.appspot.com/blog/error-handling-and-go) — エラーは値としての哲学
+- [Go blog — Defer, Panic, and Recover](https://go-tour-jp.appspot.com/blog/defer-panic-and-recover)
+- [pkg.go-tour-jp.appspot.com — errors](https://pkg.go-tour-jp.appspot.com/errors)
+- [Go Wiki — CodeReviewComments — Errors](https://go-tour-jp.appspot.com/wiki/CodeReviewComments#errors)
 - [leaning_plan — エラーハンドリング](../leaning_plan.md)

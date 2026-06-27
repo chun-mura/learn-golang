@@ -22,11 +22,11 @@
 | 並行処理が言語機能 | goroutine/channel が第一級 |
 | 標準ツール一体 | fmt, test, vet, doc が文化を形成 |
 
-**参照:** [leaning_plan](../leaning_plan.md)、[Effective Go 全体](https://go.dev/doc/effective_go)
+**参照:** [FAQ — 設計の指導原則](https://go.dokyumento.jp/doc/faq)、[Go at Google（英語）](https://go-tour-jp.appspot.com/talks/2012/splash.article)、[leaning_plan](../leaning_plan.md)、[Effective Go 全体](https://go-tour-jp.appspot.com/doc/effective_go)
 
 ### 10.2 コードレビュー文化
 
-- [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments) — 実務で参照される de facto 標準
+- [Go Code Review Comments](https://go-tour-jp.appspot.com/wiki/CodeReviewComments) — 実務で参照される de facto 標準
 - 命名、エラーメッセージ、interface サイズ、context の渡し方
 
 ### 10.3 フレームワークとライブラリ（必要時）
@@ -74,10 +74,11 @@
 
 ### 10.6 継続学習
 
-- [Go blog](https://go.dev/blog/) — 言語変更の公式説明
-- [Go Release Notes](https://go.dev/doc/devel/release) — バージョンごとの変更
+- [Go blog](https://go-tour-jp.appspot.com/blog/) — 言語変更の公式説明
+- [Go Release Notes](https://go-tour-jp.appspot.com/doc/devel/release) — バージョンごとの変更
 - [The Go Programming Language（書籍）](https://www.gopl.io/) — 辞書代わり
 - [Concurrency in Go（書籍）](https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/) — 並行処理の深掘り
+- [実用 Go 言語（O'Reilly 日本語版）](https://www.oreilly.com/library/view/shi-yong-goyan-yu-sisutemukai-fa-noxian-chang-dezhi-tuteokitaiadobaisu/9784873119694/) — 実務イディオム
 
 ## 完了チェックリスト
 
@@ -88,9 +89,11 @@
 
 ## 参照
 
-- [Effective Go](https://go.dev/doc/effective_go)
-- [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments)
-- [Go Developer Survey](https://go.dev/blog/survey) — エコシステムの実態
+- [Effective Go](https://go-tour-jp.appspot.com/doc/effective_go)
+- [FAQ](https://go.dokyumento.jp/doc/faq) — 言語設計思想
+- [Go Code Review Comments](https://go-tour-jp.appspot.com/wiki/CodeReviewComments)
+- [Go blog](https://go-tour-jp.appspot.com/blog/) — 新機能・エコシステムの公式解説
+- [Go Release Notes](https://go-tour-jp.appspot.com/doc/devel/release)
 - [leaning_plan](../leaning_plan.md)
 
 ---

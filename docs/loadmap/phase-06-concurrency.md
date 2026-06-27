@@ -69,7 +69,7 @@ defer cancel()
 
 - リクエストスコープのキャンセル・期限・値（値は乱用しない）
 - HTTP サーバ、DB クエリ、gRPC 等で必須
-- **参照:** [Go blog — context](https://go.dev/blog/context)
+- **参照:** [Go blog — context](https://go-tour-jp.appspot.com/blog/context)
 
 ### 6.6 落とし穴
 
@@ -79,7 +79,7 @@ defer cancel()
 
 ## 演習
 
-1. **[A Tour of Go — Concurrency](https://go.dev/tour/concurrency/1)** 全章 + 演習
+1. **[A Tour of Go — Concurrency](https://go-tour-jp.appspot.com/tour/concurrency/1)** 全章 + 演習
 2. 必須ミニプロジェクト（いずれか 2 つ以上）:
    - **ワーカーキュー** — N 個の worker が jobs channel から取得
    - **Rate limiter** — 秒あたり K リクエスト制限
@@ -97,8 +97,11 @@ defer cancel()
 
 ## 参照
 
-- [A Tour of Go — Concurrency](https://go.dev/tour/concurrency/1)
-- [Effective Go — Concurrency](https://go.dev/doc/effective_go#concurrency)
-- [Go blog — Share Memory By Communicating](https://go.dev/blog/codelab-share)
+- [A Tour of Go — Concurrency](https://go-tour-jp.appspot.com/tour/concurrency/1)
+- [Effective Go — Concurrency](https://go-tour-jp.appspot.com/doc/effective_go#concurrency)
+- [Go blog — Share Memory By Communicating](https://go-tour-jp.appspot.com/blog/codelab-share)
+- [Go blog — context](https://go-tour-jp.appspot.com/blog/context)
+- [Go blog — Concurrency is not Parallelism](https://go-tour-jp.appspot.com/blog/waza-talk) — goroutine の使いどころ
+- [pkg.go-tour-jp.appspot.com — context](https://pkg.go-tour-jp.appspot.com/context)
 - [Concurrency in Go（書籍）](https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/)
 - [Go by Example — Goroutines, Channels, Worker Pools](https://gobyexample.com/goroutines)

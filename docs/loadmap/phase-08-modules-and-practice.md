@@ -22,7 +22,7 @@ go mod tidy
 
 - `go.mod` / `go.sum` — 再現可能ビルド
 - semantic import versioning（v2+ は `/v2` サフィックス）
-- **参照:** [Go Modules Reference](https://go.dev/ref/mod)
+- **参照:** [Go Modules Reference](https://go-tour-jp.appspot.com/ref/mod)
 
 ### 8.2 プロジェクトレイアウト
 
@@ -34,7 +34,7 @@ myapp/
 └── pkg/                 # 公開可能なライブラリ（任意）
 ```
 
-- 公式の厳密な標準はない — [Go Project Layout（非公式だが広く参照）](https://github.com/golang-standards/project-layout) を参考程度に
+- 公式の厳密な標準はない — [golang-standards/project-layout](https://github.com/golang-standards/project-layout) は**非公式**の参考例（README も「必須ではない」と明記）
 - `internal/` はコンパイラが強制するカプセル化
 
 ### 8.3 標準ライブラリの要点
@@ -48,7 +48,7 @@ myapp/
 | `os`, `io`, `bufio` | ファイル・ストリーム |
 | `time` | 時刻・タイマー |
 
-**方針:** [Effective Go](https://go.dev/doc/effective_go) — 標準ライブラリを読む。サードパーティは必要になってから。
+**方針:** [Effective Go](https://go-tour-jp.appspot.com/doc/effective_go) — 標準ライブラリを読む。サードパーティは必要になってから。
 
 ### 8.4 HTTP サービス（net/http）
 
@@ -67,12 +67,12 @@ http.ListenAndServe(":8080", nil)
 
 ### 8.5 CLI
 
-- `flag` パッケージ — 標準の CLI 引数
-- [Go CLI Workshop](https://go.dev/doc/tutorial/workshop-getting-started)（存在する場合）または [Cobra](https://github.com/spf13/cobra) は規模が大きくなってから
+- `flag` パッケージ — 標準の CLI 引数（[pkg.go-tour-jp.appspot.com — flag](https://pkg.go-tour-jp.appspot.com/flag)）
+- 規模が大きくなったら [Cobra](https://github.com/spf13/cobra) 等を検討 — 最初は stdlib で十分
 
 ## 演習
 
-1. [Tutorial: Create a Go module](https://go.dev/doc/tutorial/create-module) を完了
+1. [Tutorial: Create a Go module](https://go-tour-jp.appspot.com/doc/tutorial/create-module) を完了
 2. **CLI ツール** — ファイルを読み JSON 行数を出力（`flag` + `encoding/json`）
 3. **HTTP サービス** — `net/http` のみで REST API（GET/POST 2 エンドポイント）
    - 他言語版と比較: ルーティング、middleware、JSON、エラー応答
@@ -87,8 +87,11 @@ http.ListenAndServe(":8080", nil)
 
 ## 参照
 
-- [Go Modules Reference](https://go.dev/ref/mod)
-- [Tutorial: Create a Go module](https://go.dev/doc/tutorial/create-module)
-- [Tutorial: Developing a RESTful API with Gin](https://go.dev/doc/tutorial/web-service-gin)（stdlib 後の参考）
+- [Go Modules Reference](https://go-tour-jp.appspot.com/ref/mod)
+- [Modules — Developing and publishing](https://go-tour-jp.appspot.com/doc/modules/developing)
+- [Tutorial: Create a Go module](https://go-tour-jp.appspot.com/doc/tutorial/create-module)
+- [Tutorial: Multi-module workspaces](https://go-tour-jp.appspot.com/doc/tutorial/workspaces) — ローカル複数モジュール
+- [Tutorial: Developing a RESTful API with Gin](https://go-tour-jp.appspot.com/doc/tutorial/web-service-gin)（stdlib 習得後の参考）
 - [Go Web Examples](https://gowebexamples.com/)
-- [pkg.go.dev/std](https://pkg.go.dev/std)
+- [pkg.go-tour-jp.appspot.com/std](https://pkg.go-tour-jp.appspot.com/std)
+- [pkg.go-tour-jp.appspot.com — net/http](https://pkg.go-tour-jp.appspot.com/net/http)

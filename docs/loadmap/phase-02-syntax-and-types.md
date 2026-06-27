@@ -15,8 +15,8 @@
 ### 2.1 言語設計の背景（軽く）
 
 - Google の大規模開発での課題（ビルド時間、複雑な言語仕様）から生まれた
-- 「機能を足すより削る」進化 — ジェネリクスも慎重に導入された
-- **参照:** [Go 4 Beginners（技術評論社）](https://gihyo.jp/dev/feature/01/go_4beginners/0001)、[leaning_plan](../leaning_plan.md)
+- 「機能を足すより削る」進化 — ジェネリクス（Go 1.18+）も慎重に導入された
+- **参照:** [FAQ — 起源・設計の指導原則](https://go.dokyumento.jp/doc/faq)、[Go at Google（英語）](https://go-tour-jp.appspot.com/talks/2012/splash.article)、[Why Generics?（英語）](https://go-tour-jp.appspot.com/blog/why-generics)、[leaning_plan](../leaning_plan.md)
 
 ### 2.2 基本構文（差分中心）
 
@@ -36,7 +36,7 @@
 - 配列 vs スライス — **スライスが日常の中心**（長さ可変、参照型）
 - `map` — キー型に制約あり、並行アクセスは単体では安全でない
 - ポインタ — C ほど低レベルではない。主にミュータブル引数・大きな struct 用
-- **ジェネリクス（Go 1.18+）** — 必要になったら [Tour of Go — Generics](https://go.dev/tour/generics/1) を参照。最初は interface で十分なことが多い
+- **ジェネリクス（Go 1.18+）** — 必要になったら [Tour of Go — Generics](https://go-tour-jp.appspot.com/tour/generics/1) を参照。最初は interface で十分なことが多い
 
 ### 2.4 コレクション操作のイディオム
 
@@ -50,7 +50,7 @@ s = append(s, item)
 
 ## 演習
 
-1. **[A Tour of Go — 第 1 章（Basics）](https://go.dev/tour/basics/1)** を最後まで（演習含む）
+1. **[A Tour of Go — 第 1 章（Basics）](https://go-tour-jp.appspot.com/tour/basics/1)** を最後まで（演習含む）
 2. [Go by Example](https://gobyexample.com/) から以下を読む:
    - Variables, Constants, For, If/Else, Switch
    - Slices, Maps, Functions, Multiple Return Values
@@ -65,6 +65,8 @@ s = append(s, item)
 
 ## 参照
 
-- [A Tour of Go — Basics](https://go.dev/tour/basics/1)
-- [Effective Go — Introduction](https://go.dev/doc/effective_go#introduction)
+- [A Tour of Go — Basics](https://go-tour-jp.appspot.com/tour/basics/1)
+- [Tutorial: Getting started](https://go-tour-jp.appspot.com/doc/tutorial/getting-started) — `go mod` と import パス
+- [Effective Go — Introduction](https://go-tour-jp.appspot.com/doc/effective_go#introduction)
+- [FAQ — 設計の指導原則](https://go.dokyumento.jp/doc/faq)
 - [Go by Example](https://gobyexample.com/)
